@@ -18,7 +18,7 @@
  #include <string.h>
  #include <stdio_ext.h>
  #include <dirent.h>
- #include "aux.h"
+ #include "auxiliar.h"
  
 int  main(int argc, char *argv[]){
 	

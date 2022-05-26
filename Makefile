@@ -9,11 +9,11 @@
  # 
  # Entreaga: Proyecto 1 - Shell
 
-shell: aux.a
-	gcc -L. -o shell shell.c aux.a
-aux.a: aux.o
-	ar -cvq aux.a aux.o
-aux.o:
-	gcc -c aux.c
+shell: auxiliar.a
+	gcc -L. -o shell shell.c auxiliar.a
+auxiliar.a: auxiliar.o
+	ar -cvq auxiliar.a auxiliar.o
+auxiliar.o:
+	gcc -c auxiliar.c
 clean:
 	rm -f shell a.out *.a *.o 
